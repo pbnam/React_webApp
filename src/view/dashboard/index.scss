@@ -1,0 +1,409 @@
+@import '../../sass/mixin';
+
+.bill-dashboard {
+    padding-bottom: 70px;
+}
+
+.bill-dashboard__header {
+    background: linear-gradient(191.45deg, rgba(76, 0, 0, 0) 0%, rgba(76, 0, 0, 0.67) 100%);
+    background-color: var(--theme-primary-color);
+    padding: 34px 0 67px;
+    color: var(--theme-light-color);
+    position: relative;
+
+    .header-wrapper {
+        padding-right: 34%;
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+
+    .header-bg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(calc(-50% - 25px));
+        right: 0;
+    }
+
+    .header-greeting {
+        display: flex;
+        margin-bottom: 24px;
+        color: var(--theme-light-color);
+    }
+
+    .header-userInfor__wallet {
+        .box-wallet {
+            @include alignCenterFlex;
+
+            svg {
+                width: 24px;
+                flex: none;
+
+                path {
+                    fill: var(--theme-light-color);
+                }
+            }
+        }
+
+        .box-wallet__name {
+            color: var(--theme-light-color);
+            padding: 0 3px;
+            margin-bottom: 0;
+            white-space: nowrap;
+        }
+
+        .box-outstanding {
+            margin-bottom: 2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .box-outstanding__label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .box-outstanding__text {
+            display: inline-block;
+            padding: 5px 15px;
+            margin-bottom: 2px;
+            color: var(--theme-light-color);
+            background-color: #911c1f;
+            border-radius: 20px;
+        }
+
+        .box-wallet__price {
+            font-weight: 700;
+        }
+    }
+}
+
+.bill-dashboard__cards {
+    margin-top: -52px;
+    margin-bottom: 23px;
+}
+
+.bill-dashboard__categories {
+    padding-top: 10px;
+    margin-bottom: 48px;
+}
+
+.bill-dashboard__promotions {
+    margin-bottom: 22px;
+}
+
+.bill-dashboard__popular {
+    margin-bottom: 25px;
+}
+
+.bill-dashboard__telco {
+    margin-bottom: 40px;
+}
+
+.bill-segmented {
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 4px;
+
+    &.ant-segmented {
+        color: var(--theme-light-color);
+    }
+}
+
+// bill card
+.bill-due-box {
+    .bill-text__due {
+        color: var(--theme-deep-pink-color);
+    }
+
+    .bill-text__paid {
+        color: var(--theme-green-color);
+    }
+
+    .bill-text__status {
+        text-transform: capitalize;
+        white-space: pre-line;
+    }
+}
+
+.bill-due-list {
+    .bill-card {
+        .bill-text {
+            margin-right: 10px;
+        }
+
+        .bill-text__name {
+            margin-bottom: 4px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            color: var(--theme-dark-color);
+        }
+
+        .bill-text__price {
+            margin: 0 0 5px;
+        }
+
+        .bill-text__badge {
+            font-size: 12px;
+            text-transform: uppercase;
+            background-color: var(--theme-green-color);
+            color: var(--theme-light-color);
+            padding: 5px 10px 2px;
+            line-height: 1;
+            border-radius: 9px;
+        }
+    }
+
+    .bill-card__inner {
+        @include alignCenterFlex;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        border-radius: 8px;
+        background-color: var(--theme-light-color);
+        min-height: 115px;
+    }
+
+    .bill-card__thumbnail {
+        margin-right: 13px;
+        flex: none;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    .bill-card__summary {
+        @include alignCenterFlex;
+        flex-grow: 1;
+        justify-content: space-between;
+
+        .bill-button {
+            flex: none;
+            min-width: 90px;
+            padding: 13px;
+        }
+    }
+
+    .bill-card--addNew {
+        color: var(--theme-dark-color);
+
+        .bill-card__inner {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .bill-button__icon {
+            @include alignCenterFlex;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 8px;
+
+            svg {
+                font-size: 24px;
+
+                &.rotate-svg {
+                    transform: rotate(180deg);
+                }
+
+                path {
+                    fill: var(--theme-gray-color);
+                }
+            }
+        }
+
+        .bill-button__icon--circle {
+            border-radius: 50%;
+            background-color: var(--theme-primary-color);
+            color: var(--theme-light-color);
+
+            svg {
+                path {
+                    fill: var(--theme-light-color);
+                }
+            }
+        }
+
+        .bill-button__name {
+            a {
+                color: var(--theme-dark-color);
+            }
+        }
+
+        .bill-button__wrapper {
+            @include alignCenterFlex;
+            flex-direction: column;
+            color: var(--theme-dark-color);
+            cursor: pointer;
+        }
+    }
+
+    .align-items-start {
+        align-items: flex-start;
+    }
+}
+
+// card horizontal
+.cards-list--horizontal {
+    .card-item {
+        padding: 0 6px;
+    }
+}
+
+// section title
+.bill-section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bill-section-title__name {
+    color: var(--theme-gray-light-color);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.bill-section-title__btn {
+    color: var(--theme-primary-color);
+    padding: 0;
+    background-color: transparent;
+    line-height: 1;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+// campain list
+.bill-campaign-list {
+    .campaign-card__inner {
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .campaign-card__thumbnail img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .campaign-card__summary {
+        padding: 18px 18px 21px;
+        color: var(--theme-dark-color);
+
+        P {
+            margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+
+// telco list
+.bill-telco-list {
+    .telco-card__inner {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background-color: var(--theme-light-color);
+    }
+
+    .telco-content,
+    .telco-card__summary {
+        display: flex;
+    }
+
+    .telco-card__summary {
+        padding: 16px;
+    }
+
+    .telco-img {
+        margin-right: 13px;
+        flex: none;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    .telco-content {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        .telco-text {
+            padding-right: 10px;
+        }
+        .telco-text__name {
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .telco-text__dueOn {
+            color: var(--theme-deep-pink-color);
+        }
+
+        .telco-text__price {
+            margin: 0 0 5px;
+        }
+
+        .telco-badge span {
+            padding: 3px 9px 1px;
+            border-radius: 9.43px;
+            background-color: var(--theme-deep-pink-color);
+            color: var(--theme-light-color);
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+
+    .telco-card__btn {
+        button {
+            width: 100%;
+            border-radius: 0 0 8px 8px;
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 19px;
+        }
+
+        .anticon svg {
+            font-size: 12px;
+        }
+    }
+}
+
+// save more biller
+.save-more-biller-popup {
+    .ant-modal-content .ant-modal-body {
+        padding: 0;
+    }
+}
+
+.save-more-biller-popup__content {
+    padding-bottom: 8px;
+
+    .entry-thumbnail {
+        margin-bottom: 9px;
+    }
+
+    .entry-title {
+        margin-bottom: 0;
+        line-height: 1.5;
+    }
+
+    .entry-content {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+
+    .bill-button {
+        margin-bottom: 15px;
+    }
+}

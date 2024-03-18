@@ -1,0 +1,12 @@
+.box-thumbnail {
+    --height: 120px;
+    --spacing: 0;
+
+    display: inline-flex;
+    min-height: var(--height);
+    margin-bottom: var(--spacing);
+}
+
+.box-thumbnail__img {
+    max-height: var(--height);
+}

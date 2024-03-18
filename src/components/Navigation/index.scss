@@ -1,0 +1,52 @@
+.biller-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 64px;
+    padding: 0 16px;
+    background-color: var(--theme-light-color);
+    box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .navigation-item {
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--theme-gray-lighter-color);
+        }
+
+        &.active {
+            a {
+                color: var(--theme-primary-color);
+            }
+
+            svg {
+                path {
+                    fill: var(--theme-primary-color);
+                }
+            }
+        }
+    }
+
+    .navigation-item__icon {
+        font-size: 24px;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation-item__name {
+        font-size: 9px;
+        text-transform: uppercase;
+        line-height: 1;
+        font-weight: 700;
+    }
+}

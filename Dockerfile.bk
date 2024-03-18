@@ -1,0 +1,26 @@
+# build stage
+FROM node:16-buster-slim
+
+# set working directory
+WORKDIR /app
+
+RUN ls
+RUN pwd
+
+COPY package.json tsconfig.json craco.config.js ./
+COPY src/ ./src
+COPY public/ ./public
+
+RUN pwd && ls
+
+RUN ls public
+RUN ls src
+RUN npm install
+
+RUN pwd
+RUN ls && ls
+RUN which npm
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start:sit"]

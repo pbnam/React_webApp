@@ -1,0 +1,56 @@
+.empty-transaction__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 24px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.empty-transaction__img {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.empty-transaction__header,
+.empty-transaction__text {
+    font-size: 16px;
+}
+
+.empty-transaction__header {
+    color: var(--theme-gray-light-color);
+    margin-bottom: 0px;
+}
+
+.empty-transaction__text {
+    color: var(--theme-gray-light-color);
+    text-align: center;
+}
+
+.transaction-wrapper {
+    overflow-y: scroll;
+    height: calc(100% - 170px);
+}
+
+.filter-calendar-icon__wrapper {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .filter-calendar-icon {
+        path {
+            fill: var(--theme-gray-color);
+        }
+    }
+}

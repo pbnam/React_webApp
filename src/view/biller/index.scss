@@ -1,0 +1,49 @@
+.biller-header {
+    background-color: #fff;
+    padding-bottom: 9px;
+    padding-top: 7px;
+
+    .entry-title {
+        margin-bottom: 0;
+        font-size: 22px;
+        font-weight: 300;
+    }
+}
+
+.biller-content__categories {
+    margin-bottom: 40px;
+
+    .entry-header {
+        margin-bottom: 34px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .entry-header__title {
+        margin-bottom: 7px;
+    }
+
+    .entry-header__search-icon {
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: var(--theme-primary-color);
+        margin-top: 5px;
+        margin-left: 15px;
+
+        a {
+            line-height: 0.6;
+        }
+
+        svg {
+            width: 13px;
+            path {
+                fill: var(--theme-light-color);
+            }
+        }
+    }
+}

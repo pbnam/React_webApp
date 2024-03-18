@@ -1,0 +1,264 @@
+@import '../../sass/variables';
+
+.date-filter__dialog {
+    .MuiTypography-root {
+        font-weight: 700;
+        margin-bottom: 16px;
+        font-family: $theme_primary_font;
+
+        //Style for weekday label
+        &:nth-child(1)::after {
+            content: 'un';
+            display: inline-block;
+        }
+        &:nth-child(2)::after {
+            content: 'on';
+            display: inline-block;
+        }
+        &:nth-child(3)::after {
+            content: 'ue';
+            display: inline-block;
+        }
+        &:nth-child(4)::after {
+            content: 'ed';
+            display: inline-block;
+        }
+        &:nth-child(5)::after {
+            content: 'hu';
+            display: inline-block;
+        }
+        &:nth-child(6)::after {
+            content: 'ri';
+            display: inline-block;
+        }
+        &:nth-child(7)::after {
+            content: 'at';
+            display: inline-block;
+        }
+    }
+
+    .MuiButtonBase-root {
+        font-family: $theme_primary_font;
+        font-size: 14px;
+    }
+
+    .MuiCalendarPicker-root > div:first-child {
+        margin-top: 24px;
+        margin-bottom: 18px;
+    }
+
+    .MuiYearPicker-root {
+        margin: 0;
+        margin-bottom: 38px;
+        padding: 0 21px;
+
+        .PrivatePickersYear-root {
+            display: block;
+            max-width: 25%;
+            flex-basis: initial;
+
+            button {
+                margin: 5px;
+            }
+        }
+    }
+
+    .MuiPickersArrowSwitcher-root {
+        margin-right: 12px;
+    }
+
+    .MuiIconButton-root > svg {
+        fill: #979797;
+    }
+
+    .MuiDialogActions-root {
+        padding: 22px 30px 26px;
+
+        .bill-button {
+            border-radius: 4px;
+            width: 95px;
+            padding: 11px;
+            margin-bottom: 25px;
+
+            &:first-child {
+                margin-right: 15px;
+            }
+
+            &:nth-child(2) {
+                border: 1px solid var(--theme-primary-color);
+                margin-left: 0px;
+            }
+        }
+    }
+
+    .MuiCalendarPicker-root div[role='presentation'] {
+        font-family: inherit;
+        font-size: 16px;
+
+        svg {
+            margin-bottom: 4px;
+            width: 11px;
+            height: 10px;
+            margin-left: 8px;
+            path {
+                fill: var(--theme-gray-color);
+            }
+        }
+    }
+    .PrivatePickersSlideTransition-root {
+        min-height: 190px;
+    }
+    .PrivatePickersYear-yearButton.Mui-disabled {
+        display: none;
+    }
+    button.PrivatePickersYear-yearButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 5px 12px;
+        border-radius: 15px;
+        border: 1px solid var(--theme-primary-color);
+        color: var(--theme-primary-color);
+        height: auto;
+        width: auto;
+        line-height: 1.25;
+    }
+
+    button.MuiPickersDay-root.Mui-selected,
+    button.MuiPickersDay-root.Mui-selected:hover,
+    .css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
+    .css-bkrceb-MuiButtonBase-root-MuiPickersDay-root:focus.Mui-selected {
+        will-change: unset;
+        background-color: var(--theme-primary-color);
+        transition: none;
+    }
+
+    button.PrivatePickersYear-yearButton.Mui-selected {
+        background-color: var(--theme-primary-color);
+        color: var(--theme-light-color);
+    }
+    .PrivatePickersYear-yearButton.Mui-selected:hover {
+        background-color: var(--theme-primary-color);
+    }
+}
+
+.date-filter__drawer {
+    .ant-drawer-header {
+        padding: 32px 32px 0px;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    .ant-drawer-body {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    .date-filter__drawer-reset {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--theme-gray-light-color);
+    }
+
+    .date-filter__drawer-reset--enable {
+        color: var(--theme-primary-color);
+    }
+
+    .date-filter__button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #c8c8c8;
+        margin-bottom: 24px;
+
+        .bill-button--large {
+            padding: 15px 18px;
+        }
+
+        .bill-button {
+            background-color: var(--theme-light-color);
+            color: var(--theme-gray-color);
+            border: 1px solid;
+            padding: 16px 10px;
+            min-width: 101px;
+        }
+
+        .date-filter__button--active {
+            background-color: var(--theme-primary-color);
+            color: var(--theme-light-color);
+            border: 1px solid;
+        }
+    }
+    .ant-drawer-title {
+        font-size: 22px;
+        color: #4c4c4c;
+        font-weight: 400;
+    }
+    .date-filter__text {
+        color: var(--theme-gray-light-color);
+        margin-bottom: 14px;
+        font-weight: 700;
+    }
+
+    .date-filter__range--wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .MuiInputAdornment-root {
+            margin-bottom: 10px;
+        }
+
+        .MuiInputLabel-root {
+            font-family: inherit;
+            color: var(--theme-gray-color);
+        }
+
+        .MuiInput-root {
+            padding-right: 8px;
+
+            input.MuiInput-input {
+                font-size: 16px;
+                font-family: $theme_primary_font;
+                width: 96px;
+            }
+
+            &:after {
+                border-color: var(--theme-primary-color);
+            }
+        }
+
+        .date-filter__range--icon {
+            transform: scale(0.6) rotate(180deg);
+
+            path {
+                fill: var(--theme-primary-color);
+            }
+        }
+    }
+
+    .date-filter__range--to {
+        transform: rotateY(180deg);
+        margin-top: 15px;
+        path {
+            fill: var(--theme-primary-color);
+        }
+    }
+
+    .ant-picker-focused {
+        box-shadow: none;
+    }
+
+    .date-filter__confirm--disabled {
+        opacity: 0.5;
+    }
+}
+
+.date-filter__dialog-year {
+    .MuiDialogActions-root {
+        display: none;
+    }
+}

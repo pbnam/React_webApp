@@ -1,0 +1,27 @@
+.bill-greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.bill-greeting__img {
+    margin-bottom: 28px;
+}
+
+.bill-greeting__content {
+    flex-grow: 1;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .greeting-title {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .greeting-desc {
+        font-size: 16px;
+        line-height: 1.35;
+        margin-bottom: 18px;
+    }
+}

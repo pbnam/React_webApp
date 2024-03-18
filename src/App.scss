@@ -1,0 +1,210 @@
+@import 'sass/variables';
+@font-face {
+    font-family: $primary_custom_font;
+    font-weight: 700;
+    font-display: swap;
+    src: url($font_bold_url) format('woff');
+}
+
+@font-face {
+    font-family: $primary_custom_font;
+    font-weight: 600;
+    font-display: swap;
+    src: url($font_semibold_url) format('woff');
+}
+
+@font-face {
+    font-family: $primary_custom_font;
+    font-weight: 400;
+    font-display: swap;
+    src: url($font_regular_url) format('woff');
+}
+
+// General
+body {
+    font-family: $theme_primary_font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.25;
+    background-color: #f9f9f9;
+    color: var(--theme-gray-color);
+
+    #root,
+    .App,
+    .page-bg-light {
+        height: 100%;
+    }
+
+    .page-bg-light {
+        background-color: var(--theme-light-color);
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --theme-primary-color: #ea0029;
+    --theme-dark-color: #231f20;
+    --theme-light-color: #ffffff;
+    --theme-gray-color: #58595b;
+    --theme-gray-light-color: #989899;
+    --theme-gray-lighter-color: #8a8a8c;
+    --theme-deep-pink-color: #ea0029;
+    --theme-green-color: #10cfc9;
+}
+
+.container {
+    padding: 0 24px;
+}
+
+.App {
+    .site-content {
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
+}
+
+// Heading
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--theme-dark-color);
+    line-height: 1.28;
+    font-family: $theme_primary_font;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.71em;
+}
+
+h3 {
+    font-size: 1.286em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.86em;
+}
+
+// Button
+button {
+    border: 0;
+    padding: 11px 18px;
+    font-weight: 700;
+}
+
+// Col
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 4 {
+    .col-flex-#{$i} {
+        width: calc((100 / $i) * 1%);
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+// Config antd els
+.bill-segmented {
+    .ant-segmented-item-label {
+        font-weight: 700;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .ant-segmented-thumb,
+    .ant-segmented-item,
+    .ant-segmented-item-selected {
+        border-radius: 7px;
+    }
+}
+
+// alice carousel
+.alice-carousel__wrapper {
+    .alice-carousel__stage-item {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+// antd form
+.ant-input-affix-wrapper:hover,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+    box-shadow: none;
+}
+
+// page
+.page {
+    .entry-title {
+        font-size: 22px;
+        font-weight: 300;
+    }
+}
+
+// Animation Fade
+.fadeInAndOut {
+    opacity: 1;
+    animation: fade 0.6s ease-out;
+}
+
+//
+.disable-click-insideApp {
+    overflow: hidden;
+
+    .App {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+        }
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>7D8A930E-9188-4F36-B93E-E3A37B2631D5</title>
+    <g id="8000_ShareReceipt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="102_Tx_ShareReceipt_Nickname" transform="translate(-136.000000, -350.000000)">
+            <g id="Group-2" transform="translate(0.000000, 64.000000)">
+                <g id="Group-7" transform="translate(0.000000, 72.000000)">
+                    <g id="02-Components-/-06-Text-/-05-Acknowledgement-Details-/-All-with-Only-Amounts" transform="translate(24.000000, -3.000000)">
+                        <g id="02-Components-/-06-Text-/-05-Acknowledgement-Details-/-Transaction-Details-with-Icon" transform="translate(0.000000, 204.000000)">
+                            <g id="btn-round" transform="translate(112.000000, 13.000000)">
+                                <rect id="bg" stroke="#E5E5E5" stroke-width="1.2" x="0.6" y="0.6" width="38.8" height="38.8" rx="19.4"></rect>
+                                <g id="ico-wallet" transform="translate(10.000000, 10.000000)">
+                                    <rect id="bg" fill="#D8D8D8" opacity="0.00999999978" x="0" y="0" width="20" height="20"></rect>
+                                    <g id="ico" transform="translate(2.817982, 2.619592)" fill="#58595B" fill-rule="nonzero">
+                                        <g id="Page-1">
+                                            <path d="M9.33390153,0 L10.549,3.646 L13.8833332,3.64632074 L13.8833332,14.0796545 L0,14.0796545 L0,3.64632074 L0.218,3.646 L9.33390153,0 Z M12.6329123,4.8956453 L1.24957895,4.8956453 L1.24957895,12.8289786 L12.6329123,12.8289786 L12.6329123,4.8956453 Z M10.7236842,8.03132074 C11.1839215,8.03132074 11.5570175,8.40441679 11.5570175,8.86465408 C11.5570175,9.32489137 11.1839215,9.69798741 10.7236842,9.69798741 C10.2634469,9.69798741 9.89035088,9.32489137 9.89035088,8.86465408 C9.89035088,8.40441679 10.2634469,8.03132074 10.7236842,8.03132074 Z M8.56624561,1.65231197 L3.582,3.646 L9.231,3.646 L8.56624561,1.65231197 Z" id="Combined-Shape"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,47 @@
+.site-breadcrumb {
+    background-color: var(--theme-light-color);
+    display: flex;
+    align-items: center;
+    min-height: 56px;
+
+    svg {
+        font-size: 16px;
+        margin-right: 25px;
+    }
+
+    &.hide-arrow {
+        .site-breadcrumb__icon {
+            display: none;
+        }
+
+        .site-breadcrumb__name {
+            padding-top: 16px;
+        }
+    }
+}
+
+.site-breadcrumb__icon {
+    line-height: 1;
+}
+
+.site-breadcrumb__name {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+// Other style
+.site-breadcrumb--vertical {
+    display: block;
+
+    .site-breadcrumb__name {
+        font-size: 22px;
+        font-weight: 300;
+        padding: 6px 0 10px;
+    }
+
+    .site-breadcrumb__icon {
+        height: 56px;
+        display: flex;
+        align-items: center;
+    }
+}

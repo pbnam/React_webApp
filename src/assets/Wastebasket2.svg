@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="17.5px" height="18.5px" viewBox="0 0 17.5 18.5" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group" transform="translate(0.75 0.75)">
+    <path d="M0 3L16 3" id="Stroke-1" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1.5" />
+    <path d="M2 3L2 17L14 17L14 3" id="Stroke-3" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1.5" />
+    <path d="M6 3L6 0L10 0L10 3" id="Stroke-5" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1.5" />
+    <path d="M5 6.4167L5 14.4167" id="Stroke-8" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1.5" />
+    <path d="M11 6.4167L11 14.4167" id="Stroke-9" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1.5" />
+    <path d="M8 6.4167L8 14.4167" id="Stroke-10" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1.5" />
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+// box message
+.bill-box-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--theme-green-color);
+    color: var(--theme-light-color);
+    z-index: 999;
+
+    svg {
+        path {
+            fill: var(--theme-light-color);
+        }
+    }
+}
+
+.bill-box-message--warning {
+    background-color: var(--theme-deep-pink-color);
+}
+
+.bill-box-message__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 56px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .box-title {
+        margin-bottom: 0;
+        color: inherit;
+    }
+
+    .box-btn {
+        flex: none;
+        padding-left: 20px;
+    }
+}

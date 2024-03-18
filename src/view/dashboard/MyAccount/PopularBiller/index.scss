@@ -1,0 +1,51 @@
+// popular list
+.biller-popular-list {
+    margin: 0 -4px;
+
+    p {
+        font-size: 12px;
+        margin-bottom: 0;
+        padding-right: 1px;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    .popular-card {
+        padding: 4px;
+        color: var(--theme-gray-light-color);
+    }
+
+    .popular-card__inner {
+        background-color: var(--theme-light-color);
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        border-radius: 8px;
+        position: relative;
+        height: 100%;
+    }
+
+    .popular-card__badge {
+        border-radius: 9.43px;
+        background-color: var(--theme-green-color);
+        color: var(--theme-light-color);
+        display: block;
+        padding: 4px 9px 1px;
+        font-size: 12px;
+        text-transform: uppercase;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+
+    .popular-card__btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .popular-name {
+        margin-bottom: 8px;
+    }
+}

@@ -1,0 +1,22 @@
+.transaction-group {
+    margin-top: 24px;
+
+    .transaction-group__wrapper {
+        padding: 0 24px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .filter-filter-icon__wrapper {
+            .filter-filter-icon {
+                path {
+                    fill: var(--theme-gray-color);
+                }
+            }
+        }
+
+        .transaction-group__title {
+            color: var(--theme-gray-light-color);
+        }
+    }
+}

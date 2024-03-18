@@ -1,0 +1,36 @@
+@import '../../sass/mixin';
+
+.bill-button {
+    @include formatPrimaryBtn;
+    line-height: 1;
+
+    > a {
+        color: inherit;
+        line-height: inherit;
+    }
+
+    &:focus,
+    &:hover {
+        @include formatPrimaryBtn;
+    }
+}
+
+.bill-button--large {
+    padding: 17px 15px;
+    border-radius: 24px;
+}
+
+.bill-button--medium {
+    padding: 13px 18px;
+    border-radius: 20px;
+}
+
+.bill-button--fullWidtth {
+    width: 100%;
+}
+
+.bill-button--outline {
+    border: 1px solid var(--theme-gray-color);
+    background-color: transparent;
+    color: var(--theme-gray-color);
+}

@@ -1,0 +1,150 @@
+@import '../../../../sass/mixin';
+
+.biller-phone-form__title {
+    margin-bottom: 69px;
+}
+
+.biller-phone-form__content {
+    position: relative;
+    margin-bottom: 41px;
+    display: block;
+
+    .ant-form-item {
+        margin-bottom: 0;
+    }
+
+    &.error {
+        .ant-input {
+            color: var(--theme-deep-pink-color);
+        }
+
+        svg path {
+            fill: var(--theme-deep-pink-color);
+        }
+    }
+}
+
+// general form style
+.biller-form {
+    svg {
+        width: 20px;
+        fill: var(--theme-gray-color);
+
+        path {
+            fill: var(--theme-gray-color);
+        }
+    }
+
+    .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+        display: none;
+    }
+
+    // pre-fix
+    .ant-input-affix-wrapper {
+        padding: 0 0 5px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .ant-input-affix-wrapper > input.ant-input,
+    .ant-input-number-input,
+    .ant-input {
+        padding: 5px 10px;
+        height: 35px;
+    }
+
+    .ant-input-prefix {
+        margin-right: 12px;
+    }
+
+    .input-prefix {
+        position: relative;
+        min-width: 20px;
+    }
+
+    .input-prefix__label {
+        font-size: 16px;
+        color: var(--theme-gray-light-color);
+        position: absolute;
+        white-space: nowrap;
+        left: calc(100% + 25px);
+        top: calc(50% - 3px);
+        transform: translateY(-50%);
+        transition: top 200ms ease-out;
+    }
+
+    .ant-input-has-value,
+    .ant-input-affix-wrapper-focused {
+        .input-prefix__label {
+            font-weight: 700;
+            font-size: 12px;
+            color: var(--theme-gray-color);
+            top: calc(50% - 22px);
+        }
+    }
+
+    .ant-input-affix-wrapper-status-error {
+        .ant-input-prefix {
+            color: var(--theme-gray-color);
+        }
+
+        &:not(.ant-input-affix-wrapper-focused) {
+            .ant-input {
+                color: var(--theme-deep-pink-color);
+            }
+        }
+    }
+
+    // sub-fix
+    .ant-input-suffix {
+        align-items: center;
+    }
+
+    // explain
+    .ant-form-item-explain {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        font-size: 12px;
+        color: var(--theme-deep-pink-color);
+    }
+
+    .ant-input-number-disabled {
+        background-color: transparent;
+    }
+}
+
+.biller-form__input {
+    input {
+        text-indent: 2px;
+        font-size: 16px;
+        color: var(--theme-dark-color);
+    }
+
+    .ant-input-affix-wrapper {
+        border-color: #cdcdcd;
+
+        &:not(.ant-input-affix-wrapper-disabled):hover {
+            border-color: var(--theme-deep-pink-color);
+        }
+    }
+}
+
+.biller-form__submit {
+    margin-bottom: 0;
+
+    .ant-btn-primary[disabled] {
+        @include formatPrimaryBtn;
+        opacity: 0.5;
+    }
+}
+
+.biller-form__information {
+    color: var(--theme-gray-color);
+    font-size: 12px;
+
+    .btn-modal {
+        color: var(--theme-deep-pink-color);
+        text-decoration: underline;
+    }
+}

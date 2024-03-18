@@ -1,0 +1,16 @@
+.bill-drawer {
+    .ant-drawer-header {
+        flex-direction: row-reverse;
+    }
+    .ant-drawer-content {
+        border-radius: 16px 16px 0 0;
+    }
+
+    .ant-space-item {
+        margin-right: 12px;
+    }
+    .ant-drawer-close {
+        order: 1;
+        padding: 0;
+    }
+}

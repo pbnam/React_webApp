@@ -1,0 +1,98 @@
+.save-bill-page {
+    .bill-box-message {
+        position: fixed;
+    }
+}
+
+.biller-save-form__title {
+    margin-bottom: 44px;
+}
+
+.biller-save-form {
+    .ant-form {
+        color: var(--theme-dark-color);
+    }
+
+    .ant-form-item {
+        margin-bottom: 39px;
+    }
+
+    .ant-input-affix-wrapper-disabled {
+        color: inherit;
+
+        .ant-input[disabled] {
+            color: inherit;
+        }
+    }
+
+    .ant-input-suffix {
+        font-weight: 700;
+        align-items: center;
+        font-size: 12px;
+
+        .box-icon {
+            width: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -5px;
+        }
+
+        svg {
+            width: 10px;
+            transform: rotate(180deg);
+        }
+
+        .icon-stop {
+            width: 17px;
+        }
+    }
+}
+
+.biller-drawer {
+    .ant-drawer-content {
+        border-radius: 16px 16px 0 0;
+    }
+
+    .entry-button__next {
+        position: absolute;
+        right: 24px;
+        bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: var(--theme-primary-color);
+
+        svg {
+            path {
+                fill: var(--theme-light-color);
+            }
+        }
+    }
+}
+
+.biller-drawer__header {
+    display: flex;
+    justify-content: space-between;
+
+    .section-title {
+        padding-right: 15px;
+    }
+
+    .section-title__name {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    svg {
+        flex: none;
+        margin-top: 8px;
+
+        path {
+            fill: var(--theme-gray-color);
+        }
+    }
+}

@@ -1,0 +1,195 @@
+@import '../../../../sass/mixin';
+
+.confirm-payment__header {
+    padding-top: 35px;
+    padding-bottom: 23px;
+
+    .pay-amount {
+        font-weight: 700;
+        border-bottom: 1px solid #cdcdcd;
+        margin-bottom: 2px;
+    }
+
+    .balance-box {
+        @include alignCenterFlex;
+        margin-top: 3px;
+    }
+
+    .balance-box__icon {
+        width: 17px;
+        height: auto;
+        margin-right: 12px;
+
+        path {
+            fill: var(--theme-gray-color);
+        }
+    }
+
+    .balance-box__amount {
+        font-size: 12px;
+    }
+}
+
+.confirm-payment__payto {
+    background-color: #f9f9f9;
+    padding-top: 29px;
+    padding-bottom: 32px;
+
+    .payto__header {
+        color: var(--theme-gray-color);
+        margin-bottom: 19px;
+    }
+
+    .payto__card {
+        background-color: var(--theme-light-color);
+        padding: 6px 0 0;
+        box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+        border-radius: 8px;
+    }
+
+    .payto__biller-infor {
+        padding: 0 15px 17px;
+    }
+
+    .payto__img {
+        max-width: 80px;
+    }
+
+    .payto__name {
+        line-height: 13px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .payto__account-number {
+        font-size: 12px;
+        color: var(--theme-gray-light-color);
+        font-weight: 700;
+    }
+
+    .payto__charge {
+        list-style: none;
+    }
+
+    .payto__info {
+        white-space: pre-line;
+        padding-top: 27px;
+        line-height: 1.43;
+
+        .info-title {
+            color: var(--theme-gray-color);
+            margin-bottom: 15px;
+        }
+    }
+
+    .charge-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 15px 8px;
+        background-color: var(--theme-light-color);
+        border-top: 1px solid #f3f4f4;
+    }
+
+    .charge-item__label,
+    .charge-item--fee {
+        color: var(--theme-gray-color);
+    }
+
+    .charge-item--total {
+        .charge-item__price {
+            font-weight: 700;
+            color: var(--theme-dark-color);
+        }
+    }
+}
+
+.drawer-confirm-payment {
+    .ant-drawer-header {
+        padding: 35px 30px 12px;
+    }
+
+    .ant-drawer-title {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .drawer__title {
+        margin-bottom: 11px;
+    }
+
+    .pin-field__container {
+        display: flex;
+        width: 86%;
+        margin: 0 auto 28px;
+        height: 88px;
+        font-family: auto;
+
+        input {
+            @include alignCenterFlex;
+            width: 16.5%;
+            border: none;
+            font-size: 56px;
+            text-align: center;
+            color: var(--theme-primary-color);
+            caret-color: transparent;
+            -webkit-text-security: disc;
+            background-color: transparent;
+
+            &:hover {
+                background-position: 0px -32px;
+            }
+        }
+
+        input:not(:placeholder-shown) {
+            font-size: 40px;
+            transform: translateY(16px);
+        }
+
+        input::placeholder {
+            @include alignCenterFlex;
+            color: #cdcdcd;
+        }
+        input:focus {
+            border: none;
+            outline: none;
+        }
+    }
+    .pin-field__forgot-pin {
+        color: var(--theme-primary-color);
+        font-weight: 700;
+    }
+
+    &.error {
+        .ant-drawer-title {
+            color: var(--theme-deep-pink-color);
+        }
+    }
+}
+
+// fix layout
+.confirm-payment-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.confirm-payment-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirm-payment-content__scroll {
+    overflow-y: scroll;
+    height: calc(100% - 103px);
+}
+
+.confirm-payment__more-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background-color: var(--theme-light-color);
+}

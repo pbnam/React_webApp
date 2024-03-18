@@ -1,0 +1,37 @@
+@import '../../sass/mixin';
+
+.bill-submit-btn {
+    width: 100%;
+    padding: 17px 25px;
+    height: auto;
+    line-height: 1;
+    border-radius: 24px;
+    font-weight: 700;
+    @include formatPrimaryBtn;
+
+    &:focus,
+    &:hover {
+        @include formatPrimaryBtn;
+    }
+}
+
+.bill-submit-btn--loading span {
+    position: relative;
+
+    &::after {
+        content: '';
+        border-width: 1px;
+        border-color: var(--theme-light-color) var(--theme-light-color) var(--theme-light-color) transparent;
+        border-radius: 50%;
+        border-style: solid;
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+        width: 13px;
+        height: 13px;
+        font-weight: 400;
+        position: absolute;
+        top: 1px;
+        left: calc(100% + 10px);
+        z-index: 999;
+    }
+}

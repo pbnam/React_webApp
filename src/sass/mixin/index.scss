@@ -1,0 +1,16 @@
+@mixin formatPrimaryBtn {
+    border: none;
+    background-color: var(--theme-primary-color);
+    color: var(--theme-light-color);
+}
+
+@mixin alignCenterFlex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

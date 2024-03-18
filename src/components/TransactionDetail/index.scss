@@ -1,0 +1,130 @@
+@import '../../sass/mixin';
+
+.transaction-detail-drawer {
+    .ant-drawer-header {
+        padding: 24px 20px 16px;
+
+        svg {
+            path {
+                fill: var(--theme-gray-color);
+            }
+        }
+    }
+    .ant-drawer-body {
+        padding-top: 0px;
+    }
+    .ant-drawer-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--theme-dark-color);
+    }
+    .ant-drawer-extra {
+        @include alignCenterFlex;
+    }
+
+    .transaction-detail__summary {
+        flex-direction: column;
+        margin-bottom: 22px;
+        @include centerFlex;
+    }
+    .transaction-detail__summary-text {
+        font-size: 12px;
+        color: var(--theme-gray-color);
+        text-transform: uppercase;
+        margin-bottom: 2px;
+    }
+    .transaction-detail__summary-amount {
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+    .transaction-detail__wrapper {
+        margin-bottom: 13px;
+        padding-top: 13px;
+        display: flex;
+        gap: 24px;
+        font-size: 12px;
+        border-top: 1px dashed #f0f0f0;
+        font-weight: 700;
+    }
+
+    .transaction-detail__title {
+        width: 88px;
+    }
+
+    .transaction-detail__id {
+        color: var(--theme-gray-light-color);
+        font-weight: 600;
+    }
+
+    .transaction-detail__description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transaction-detail__wallet-balance,
+    .transaction-detail__time {
+        color: var(--theme-gray-light-color);
+        font-weight: 400;
+    }
+
+    .transaction-detail__wallet-wrapper {
+        @include alignCenterFlex;
+    }
+    .transaction-detail__wallet-icon {
+        margin-right: 8px;
+    }
+    .transaction-detail__wallet-paid {
+        @include alignCenterFlex;
+    }
+
+    .transaction-detail__wallet-minus {
+        background: var(--theme-deep-pink-color);
+        display: inline-block;
+        width: 8px;
+        height: 2px;
+        margin-right: 8px;
+    }
+
+    .transaction-detail__share {
+        margin-top: 45px;
+        flex-direction: column;
+        @include centerFlex;
+    }
+
+    .transaction-detail__share-text {
+        font-size: 12px;
+    }
+}
+
+.transaction-detail__icon-header {
+    @include centerFlex;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--theme-gray-color);
+    border-radius: 50%;
+
+    svg {
+        width: 10px;
+        height: 100%;
+        @include centerFlex;
+    }
+}
+
+.transaction-detail__share-icon {
+    @include centerFlex;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+
+    svg {
+        width: 16px;
+        height: 100%;
+        @include centerFlex;
+
+        path {
+            fill: var(--theme-gray-color);
+        }
+    }
+}
